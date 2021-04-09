@@ -9,7 +9,7 @@
         <maven.compiler.source>11</maven.compiler.source>
     </properties>
 
-    <groupId>ies.p3</groupId>
+    <groupId>tqs</groupId>
     <artifactId>P1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
