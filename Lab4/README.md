@@ -24,4 +24,4 @@ c)
     Mock da libraria Mockito permite a criação de uma interface onde é possível imitar o comportamento de um objeto não sendo necessária a implementação do mesmo.
 
 d)
-    O ficheiro "application-integrationtest.properties" serve para estabelecer uma ligação à base de dados que vai ser usada nos testes de integração.
+    O ficheiro "application-integrationtest.properties" fornece os dados necessários para estabelecer uma ligação à base de dados que vai ser usada nos testes de integração.
