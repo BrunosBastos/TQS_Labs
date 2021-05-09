@@ -22,6 +22,9 @@ public class Dip {
     static final int NUMBERS_BOUND = 49;
     static final int STARTS_BOUND = 9;
 
+    private static final Random generator = new Random();
+
+
     public Dip() {
         numbers = new SetOfNaturals();
         starts = new SetOfNaturals();
@@ -48,21 +51,18 @@ public class Dip {
     }
 
     public static Dip generateRandomDip() {
-        Random generator = new Random();
 
         Dip randomDip = new Dip();
-        for (int i = 0; i < NUMBERS_LEN; ) {
+        for (int i = 0; i < NUMBERS_LEN; i++) {
             int candidate = generator.nextInt(NUMBERS_BOUND) + 1;
             if (!randomDip.getNumbersColl().contains(candidate)) {
                 randomDip.getNumbersColl().add(candidate);
-                i++;
             }
         }
-        for (int i = 0; i < STARTS_LEN; ) {
+        for (int i = 0; i < STARTS_LEN; i++ ) {
             int candidate = generator.nextInt(STARTS_BOUND) + 1;
             if (!randomDip.getStarsColl().contains(candidate)) {
                 randomDip.getStarsColl().add(candidate);
-                i++;
             }
         }
         return randomDip;

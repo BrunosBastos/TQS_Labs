@@ -1,3 +1,3 @@
-# TQS Lab Classes
+## TQS Lab Classes
 
-## Bruno de Sousa Bastos NMEC:93302
+### Author: Bruno Bastos
