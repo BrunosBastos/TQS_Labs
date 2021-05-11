@@ -5,16 +5,16 @@ pipeline {
         maven 'maven'
     }
     stages {
-        stage('test java installation') {
+        stage('Install') {
             steps {
                 dir('/Lab4/p1'){
                     sh 'mvn clean install'
                 }
             }
-        }
-        post{
-            always{
-                junit '**/target/*-reports/TEST-*.xml'
+            post{
+                always{
+                    junit '**/target/*-reports/TEST-*.xml'
+                }
             }
         }
     }
