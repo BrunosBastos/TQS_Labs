@@ -1,5 +1,5 @@
 package tqsdemo.employeemngr.employee;
-
+import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -43,6 +43,10 @@ public class EmployeeService_UnitTest {
         Mockito.when(employeeRepository.findById(john.getId())).thenReturn(Optional.of(john));
         Mockito.when(employeeRepository.findAll()).thenReturn(allEmployees);
         Mockito.when(employeeRepository.findById(-99L)).thenReturn(Optional.empty());
+    }
+    @Test
+    void fail_test(){
+        fail("fail test");
     }
 
     @Test
