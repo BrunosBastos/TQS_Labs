@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                dir('/Lab4/p1'){
+                dir('./Lab4/p1'){
                     sh 'mvn clean install'
                 }
             }
